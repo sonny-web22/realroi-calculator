@@ -13,17 +13,11 @@
 import React, { useMemo, useState } from 'react';
 import { Bar, BarChart, CartesianGrid, Tooltip, XAxis, YAxis, ResponsiveContainer } from 'recharts';
 
-
 // ---------------------------
-// Types
+// Types (removed for build compatibility)
 // ---------------------------
 
-
-type ModelInputs = {
-  purchasePrice: number;        // e.g., 300_000
-  downPayment: number;          // absolute dollars (not %)
-  appreciationCum10yr: number;    // +0.80 = +80% total over 10yrs => used to derive annual
-  principalPaydown10yr: number;   // e.g., 48_000 over 10yrs
+// (formerly ModelInputs type definition, now omitted because JSX can’t parse it)
 
 
   startRentMonthly: number;     // e.g., 1800
